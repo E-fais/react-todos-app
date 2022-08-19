@@ -1,0 +1,17 @@
+.wrapper,.listedTodo, h3{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.deleteBtn{
+  background-color: red;
+border: none;
+color: white;
+}
+.inputBtn{
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  margin-left: 10px;
+}
