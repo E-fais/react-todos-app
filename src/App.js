@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import {useState} from 'react'
 import Todo from "./Todo";
 function App() {
 
   const [elements,setElements]=useState('')
-  const [items,setItems]=useState([])
+  const [items,setItems]=useState(()=>{
+    const savedTodos=localStorage.getItem('todos')
+    if(savedTodos){
+      return JSON.parse(savedTodos)}
+      else {
+        return []
+      }
+  })
   const inputHandler=(e)=>{
     setElements(e.target.value)
   }
@@ -16,6 +23,9 @@ const addElementHandler=()=>{
 
 
 }
+useEffect(()=>{
+  localStorage.setItem('todos',JSON.stringify(items))
+},[items])
 
   return (
     <div className="app">
