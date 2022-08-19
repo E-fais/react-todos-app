@@ -16,9 +16,9 @@ props.setItems(newList)
 
  {props.items.map((obj)=>{
     return(
-        <div  className='listedTodo'>
-           <p>{obj.item} <button className='deleteBtn' onClick={()=>{deleteBtn(obj.key) }}>X</button></p> 
-        </div>
+       
+           <h2>{obj.item} <button className='deleteBtn' onClick={()=>{deleteBtn(obj.key) }}>X</button></h2> 
+        
     )
   }) }
 

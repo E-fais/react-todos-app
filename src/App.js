@@ -29,7 +29,7 @@ useEffect(()=>{
 
   return (
     <div className="app">
-       <h3>ToDo List</h3>
+       <h2>ToDo List</h2>
       <div className="appheader">
        
         <div className="wrapper">

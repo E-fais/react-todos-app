@@ -1,8 +1,8 @@
-.wrapper,.listedTodo, h3{
+.wrapper,.listedTodo{
   display: flex;
-  
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 .deleteBtn{
   background-color: red;
@@ -14,4 +14,14 @@ color: white;
   background-color: green;
   border: 1px solid green;
   margin-left: 10px;
+}
+h2{
+  text-align: center;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
